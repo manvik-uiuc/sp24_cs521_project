@@ -1,0 +1,18 @@
+# BERT 
+https://huggingface.co/docs/transformers/model_doc/bert
+
+
+
+
+# QUANTIZATION
+
+
+
+# DISTILLATION
+
+
+
+
+# FINE TUNNING BERT 
+https://huggingface.co/docs/transformers/en/training
+https://medium.com/@coderhack.com/fine-tuning-bert-for-text-classification-a-step-by-step-guide-1a1c5f8e8ae1
