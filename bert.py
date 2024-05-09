@@ -1,13 +1,15 @@
 # Contains hugging face implementation of BERT to get started
 from transformers import BertTokenizer, BertModel
 import torch
+import time
 
+start = time.time()
 # Load pre-trained BERT model and tokenizer
 tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
 model = BertModel.from_pretrained('bert-base-uncased')
 
 # Input text
-text = "Replace this with your own text."
+text = ["Replace this with your own text."]
 
 # Tokenize input text
 input_ids = tokenizer.encode(text, add_special_tokens=True)
@@ -30,3 +32,5 @@ sentence_embedding = torch.mean(last_hidden_states, dim=1)
 
 # Print the embedding tensor
 print(sentence_embedding)
+
+print(time.time() - start)
